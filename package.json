@@ -1,0 +1,20 @@
+{
+  "name": "d3",
+  "version": "1.0.0",
+  "description": "Project on D3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaykabir/d3.js.git"
+  },
+  "author": "Alay Kabir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaykabir/d3.js/issues"
+  },
+  "homepage": "https://github.com/alaykabir/d3.js#readme"
+}
