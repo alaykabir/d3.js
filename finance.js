@@ -1,3 +1,3 @@
-d3.csv("finance.csv").get(function (error, data) {
+d3.csv("finance.csv", d3.autoType).then(function (data) {
   console.log(data);
 });
