@@ -19,7 +19,7 @@ function main() {
     .append("g")
     .attr("transform", "translate(" + 100 + "," + 100 + ")");
 
-  /*8*/ d3.csv("test.csv").then(function (data) {
+  /*8*/ d3.csv("/data/test.csv").then(function (data) {
     /*9*/ xScale.domain(
       /*10*/ data.map(function (d) {
         return d.year;
@@ -28,7 +28,7 @@ function main() {
     yScale.domain([
       0,
       /*11*/ d3.max(data, function (d) {
-        return d.value;
+        return d.value * 1.1;
       }),
     ]);
 
@@ -47,7 +47,7 @@ function main() {
         d3
           /*13, 14*/ .axisLeft(yScale)
           .tickFormat(function (d) {
-            return "$" + d;
+            return "Rs." + d + "k";
           })
           /*15*/ .ticks(10)
       )
